@@ -7,7 +7,7 @@
 
 /* Generics */
 body {
-    font-family: Open sans-serif;
+    font-family: Open sans;
 }
 
 /* Utils */
@@ -19,6 +19,10 @@ body {
 
 .bgc {
     background-color: white;
+}
+
+.bgc-second {
+    background-color: #B4D0E7;
 }
 
 .span-align {
@@ -48,8 +52,12 @@ body {
 }
 
 .section-layout {
-    height: 650px;
-    background-color: #B4D0E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 800px;
+    padding-top: 200px;
 }
 
 /* HEADER */
@@ -89,3 +97,50 @@ header img {
 }
 
 /* MAIN */
+
+h1 {
+    font-size: 65px;
+    text-align: left;
+}
+
+#h1-section {
+    width: 70%;
+}
+
+.welcome-div {
+    padding-top: 100px;
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.welcome-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.welcome-section p {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.welcome-section span {
+    margin-bottom: 85px;
+}
+
+.trial-button {
+    width: 65%;
+    margin-bottom: 30px;
+}
+
+#button-active:active {
+    transform: scale(1.1);
+}
+
+.fa-arrow-down {
+    font-size: 35px;
+}
