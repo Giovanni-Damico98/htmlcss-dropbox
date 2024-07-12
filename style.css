@@ -60,6 +60,11 @@ body {
     padding-top: 200px;
 }
 
+/* .border-bottom {
+    border: solid;
+    padding-bottom: 10px;
+} */
+
 /* HEADER */
 header {
     display: flex;
@@ -68,6 +73,7 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 70px;
+    z-index: 1;
 }
 
 header img {
@@ -143,4 +149,128 @@ h1 {
 
 .fa-arrow-down {
     font-size: 35px;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    height: 1000px;
+    width: 100%;
+}
+
+.price-column {
+    height: 700px;
+    width: 60%;
+    margin-top: 150px;
+}
+
+.price-column h2 {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.checklist {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+
+.checked {
+    height: 20px;
+    width: 20px;
+    border: 5px solid;
+    border-radius: 20px;
+    color: #0061FF;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.unchecked {
+    height: 20px;
+    width: 20px;
+    border: 5px solid;
+    border-radius: 20px;
+    color: white;
+    border: 1px solid lightgray;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.column-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: calc(100% / 3);
+    border: 1px solid lightgray;
+}
+
+.last-column {
+    width: 100%;
+    border: 1px solid lightgray;
+}
+
+.column-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    gap: 5px;
+    padding: 10px 0px;
+}
+
+.column-content {
+    font-size: 15px;
+    padding: 25px 15px;
+}
+
+.fa-check {
+    color: #0061FF;
+}
+
+.fa-ul {
+    margin-top: 40px;
+    margin-left: 23px;
+}
+
+.button-padding {
+    padding: 10px 41px;
+    margin-left: 0px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.border-bottom {
+    display: inline-block;
+    padding-bottom: 40px;
+    border-bottom: 1px solid lightgray;
+}
+
+.column-content li {
+    padding-bottom: 20PX;
+}
+
+h4 {
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+.euro-price {
+    margin-bottom: -10px;
+    font-weight: bold;
+    font-size: 13px;
+    display: block;
+}
+
+.month {
+    margin-bottom: -10px;
+    font-size: 13px;
+    display: block;
 }
