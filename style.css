@@ -242,7 +242,7 @@ h1 {
 }
 
 .text span {
-    padding-bottom: 75px;
+    padding-bottom: 55px;
 }
 
 
@@ -317,9 +317,9 @@ h3 {
 .partner {
     display: flex;
     justify-content: center;
-    height: 500px;
-    border: solid;
     gap: 40px;
+    position: relative;
+    right: 35px;
 }
 
 .partner img {
@@ -344,4 +344,55 @@ h3 {
     border: solid 1px;
     background-color: #FFFFFF;
     padding: 7px 10px;
+}
+
+.business-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.business-container h2 {
+    position: relative;
+    padding-bottom: 40px;
+    right: 80px;
+    font-size: 30px;
+}
+
+#business-h2 {
+    position: relative;
+    right: 187px;
+}
+
+.business-container a {
+    font-size: 13px;
+    position: relative;
+    right: 320px;
+}
+
+.business-div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    gap: 30px;
+    margin-bottom: 125px;
+}
+
+.business-card {
+    width: calc((100% / 3) - (90px / 2));
+}
+
+.business-card img {
+    height: 177px;
+}
+
+.business-card h3 {
+    font-size: 16px;
+}
+
+.business-card p {
+    font-size: 11px;
 }
