@@ -1,22 +1,23 @@
-/* Reset */
+/* Reset dei margini, padding e box-sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Generics */
+/* Impostazioni generiche per il corpo del documento */
 body {
     font-family: 'Open Sans', sans-serif;
 }
 
-/* Utils */
+/* Utility per l'allineamento degli elementi */
 .alignment {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Colori di sfondo */
 .bgc {
     background-color: white;
 }
@@ -25,6 +26,7 @@ body {
     background-color: #B4D0E7;
 }
 
+/* Allineamento degli span */
 .span-align {
     margin-left: 20px;
     height: 100%;
@@ -32,34 +34,41 @@ body {
     cursor: pointer;
 }
 
+/* Margine a destra */
 .margin-right {
     margin-right: 20px;
     height: 100%;
 }
 
+/* Stili per i pulsanti */
+.blue-button,
+.header-button {
+    border: none;
+    cursor: pointer;
+}
+
+/* Pulsante blu */
 .blue-button {
     background-color: #0061FF;
     color: white;
-    border: none;
     padding: 5px 10px;
-    cursor: pointer;
 }
 
+/* Pulsante nell'header */
 .header-button {
     background-color: white;
-    border: none;
-    cursor: pointer;
 }
 
+/* Layout delle sezioni */
 .section-layout {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 120px 0px 0px 0px;
+    padding: 120px 0 0;
 }
 
-/* HEADER */
+/* Stili per l'header */
 header {
     display: flex;
     position: fixed;
@@ -70,147 +79,156 @@ header {
     z-index: 1;
 }
 
+/* Immagini nell'header */
 header img {
     height: 20px;
 }
 
-.left-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+/* Div sinistro e destro nell'header */
+.left-div,
 .right-div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Hover e active sul link dell'header */
 #header-hover:hover {
     height: 100%;
-    border-bottom: solid;
-    border-color: black;
+    border-bottom: solid black;
 }
 
-#header-hover:active {
+/* Effetto di trasformazione al click */
+#header-hover:active,
+#button-active:active {
     transform: scale(1.1);
 }
 
-/* MAIN */
-
+/* Stili principali per i titoli */
 h1 {
     font-size: 65px;
     text-align: left;
 }
 
+/* Sezione del titolo h1 */
 #h1-section {
-    top: 40px;
     position: relative;
+    top: 40px;
     width: 76%;
 }
 
+/* Div di benvenuto */
 .welcome-div {
     padding-top: 100px;
 }
 
+/* Sezione di benvenuto */
 .welcome-section {
-    top: 56px;
     position: relative;
+    top: 56px;
     display: flex;
     flex-direction: column;
     width: 20%;
 }
 
+/* Contenitore di benvenuto */
 .welcome-container {
     display: flex;
     justify-content: center;
 }
 
+/* Paragrafi nella sezione di benvenuto */
 .welcome-section p {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 0;
 }
 
+/* Span nella sezione di benvenuto */
 .welcome-section span {
     margin-bottom: 85px;
 }
 
+/* Sezione jumbo */
 .jumbo {
-    top: 88px;
     position: relative;
+    top: 88px;
     width: 55%;
 }
 
+/* Pulsante di prova */
 .trial-button {
     width: 65%;
     margin-bottom: 30px;
 }
 
-#button-active:active {
-    transform: scale(1.1);
-}
-
+/* Icona freccia verso il basso */
 .fa-arrow-down {
     font-size: 35px;
 }
 
+/* Sezione dei prezzi */
 .price {
     display: flex;
     justify-content: center;
     width: 100%;
     padding: 150px 0;
-    /* Rimosso l'altezza fissa */
 }
 
+/* Colonna dei prezzi */
 .price-column {
     width: 60%;
 }
 
+/* Titolo della colonna dei prezzi */
 .price-column h2 {
     font-size: 30px;
     margin-bottom: 50px;
 }
 
+/* Lista dei prezzi */
 .checklist {
     display: flex;
     justify-content: flex-start;
     margin-bottom: 30px;
 }
 
-.checked {
-    height: 20px;
-    width: 20px;
-    border: 5px solid;
-    border-radius: 20px;
-    color: #0061FF;
-    display: inline-block;
-    margin-right: 10px;
-}
-
+/* Icone selezionate e non selezionate */
+.checked,
 .unchecked {
     height: 20px;
     width: 20px;
-    border: 5px solid;
     border-radius: 20px;
-    color: white;
-    border: 1px solid lightgray;
     display: inline-block;
-    margin-right: 10px;
+    margin: 0 10px;
+}
+
+/* Icona selezionata */
+.checked {
+    border: 5px solid #0061FF;
+    color: #0061FF;
+}
+
+/* Icona non selezionata */
+.unchecked {
+    border: 1px solid lightgray;
+    color: white;
     margin-left: 10px;
 }
 
+/* Div con colonne */
 .column-div {
-    gap: 30px;
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
+/* Singola colonna */
 .column {
     flex: 1;
     width: calc((100% / 3) - (60px / 2));
     border: 1px solid lightgray;
 }
 
+/* Ultima colonna con layout specifico */
 .last-column {
     display: flex;
     flex-direction: column;
@@ -222,98 +240,108 @@ h1 {
     margin-top: 30px;
 }
 
+/* Contenuto dell'ultima colonna */
 .last-column .column-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     height: 100%;
-    padding: 25px 25px;
+    padding: 25px;
 }
 
+/* Pulsante nell'ultima colonna */
 .last-column .button {
     align-self: flex-end;
     margin-bottom: 10px;
 }
 
+/* Testo nell'ultima colonna */
 .last-column .text {
     text-align: left;
     position: relative;
     top: -76px;
 }
 
+/* Span nel testo */
 .text span {
     padding-bottom: 55px;
 }
 
-
+/* Header della colonna */
 .column-header {
-    font-size: 13px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 13px;
     border-bottom: 1px solid lightgray;
     gap: 5px;
-    padding: 10px 0px;
+    padding: 10px 0;
 }
 
+/* Contenuto della colonna */
 .column-content {
     font-size: 13px;
     padding: 25px 15px;
 }
 
+/* Icona di check */
 .fa-check {
     color: #0061FF;
 }
 
+/* Lista non ordinata */
 .fa-ul {
     margin-top: 40px;
     margin-left: 23px;
 }
 
+/* Padding per i pulsanti */
 .button-padding {
     padding: 10px 25px;
-    margin-left: 10px;
-    margin-bottom: 30px;
-    margin-top: 20px;
+    margin: 20px 0 30px 10px;
 }
 
+/* Bordo inferiore */
 .border-bottom {
     display: inline-block;
     padding-bottom: 40px;
     border-bottom: 1px solid lightgray;
 }
 
+/* Lista nel contenuto della colonna */
 .column-content li {
     padding-bottom: 20px;
 }
 
+/* Titoli */
 h4 {
-    margin-bottom: 20px;
-    margin-top: 40px;
+    margin: 40px 0 20px;
 }
 
 h3 {
-    margin-bottom: 20px;
     font-size: 20px;
+    margin-bottom: 20px;
 }
 
-.euro-price {
-    margin-bottom: -10px;
-    font-weight: bold;
-    font-size: 13px;
-    display: block;
-}
-
+/* Prezzi in euro e per mese */
+.euro-price,
 .month {
-    margin-bottom: -10px;
-    font-size: 13px;
     display: block;
+    font-size: 13px;
+    margin-bottom: -10px;
 }
 
+/* Prezzo in euro */
+.euro-price {
+    font-weight: bold;
+}
+
+/* Allargatore */
 .allargatore {
     height: 27px;
 }
 
+/* Sezione dei partner */
 .partner {
     display: flex;
     justify-content: center;
@@ -322,57 +350,66 @@ h3 {
     right: 35px;
 }
 
+/* Immagini dei partner */
 .partner img {
     height: 400px;
 }
 
+/* Div dei partner */
 .partner-div {
     position: relative;
     top: 45px;
 }
 
+/* Titoli dei partner */
 .partner-div h2 {
     font-size: 19px;
 }
 
+/* Paragrafi dei partner */
 .partner-div p {
     font-size: 12px;
     margin: 25px 0;
 }
 
+/* Pulsanti dei partner */
 .partner-div button {
-    border: solid 1px;
-    background-color: #FFFFFF;
+    background-color: white;
+    border: 1px solid;
     padding: 7px 10px;
 }
 
+/* Contenitore delle sezioni business */
 .business-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin: 100px 0;
 }
 
+/* Titolo della sezione business */
 .business-container h2 {
     position: relative;
-    padding-bottom: 40px;
     right: 80px;
+    padding-bottom: 40px;
     font-size: 30px;
 }
 
+/* H2 fine sezione business */
 #business-h2 {
     position: relative;
     right: 187px;
 }
 
+/* Link nella sezione business */
 .business-container a {
-    font-size: 13px;
     position: relative;
     right: 320px;
+    font-size: 13px;
 }
 
+/* Div delle card business */
 .business-div {
     display: flex;
     flex-wrap: wrap;
@@ -381,18 +418,22 @@ h3 {
     margin-bottom: 125px;
 }
 
+/* Card business */
 .business-card {
     width: calc((100% / 3) - (90px / 2));
 }
 
+/* Immagini nelle card business */
 .business-card img {
     height: 177px;
 }
 
+/* Titoli nelle card business */
 .business-card h3 {
     font-size: 16px;
 }
 
+/* Paragrafi nelle card business */
 .business-card p {
     font-size: 11px;
 }
