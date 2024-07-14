@@ -437,3 +437,139 @@ h3 {
 .business-card p {
     font-size: 11px;
 }
+
+/* Contenitore principale per le aziende partner, impostato come flex per la disposizione orizzontale. */
+.partner-companies-container {
+    display: flex;
+    width: 100%;
+}
+
+/* Contenitore per le colonne delle partner, con wrapping e dimensioni fisse. */
+.partner-companies-div {
+    display: flex;
+    flex-wrap: wrap;
+    height: 447px;
+    width: 33.33%;
+}
+
+/* Stile per ciascuna card delle partner, con allineamento e dimensioni specifiche. */
+.partner-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 50%;
+    position: relative;
+    background-color: transparent;
+}
+
+/* Pseudoelemento per gestire l'effetto di schiarimento al passaggio del mouse. */
+.partner-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+/* Regola per attivare l'effetto di schiarimento dello sfondo al passaggio del mouse. */
+.partner-card:hover::before {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Stile per le immagini delle card, per applicare il filtro di inversione. */
+.partner-card img {
+    filter: invert(100%);
+}
+
+/* Altezza specifica per ogni immagine delle aziende partner. */
+#designit {
+    height: 32px;
+}
+
+#arizona {
+    height: 95px;
+}
+
+#florida {
+    height: 20px;
+}
+
+#topps {
+    height: 65px;
+}
+
+#world {
+    height: 32px;
+}
+
+#hearst {
+    height: 12px;
+}
+
+#lonely {
+    height: 45px;
+}
+
+#clear {
+    height: 60px;
+}
+
+/* Colori di sfondo per ciascuna card delle partner. */
+.first-card {
+    background-color: #A2D39B;
+}
+
+.second-card {
+    background-color: #61082B;
+}
+
+.third-card {
+    background-color: #0093CE;
+}
+
+.fourth-card {
+    background-color: #FF1C1C;
+}
+
+.fifth-card {
+    background-color: #D5001F;
+}
+
+.sixth-card {
+    background-color: #B4D0E7;
+}
+
+.seventh-card {
+    background-color: #0D2481;
+}
+
+.eighth-card {
+    background-color: #FFD830;
+}
+
+/* Sezione centrale per informazioni, con padding e colore di sfondo. */
+.partner-companies-center {
+    padding: 30px;
+    height: 447px;
+    width: 33.33%;
+    background-color: #F5F5F5;
+}
+
+/* Altezza fissa per le immagini nella sezione centrale. */
+.partner-companies-center img {
+    height: 70px;
+}
+
+/* Stili per il paragrafo e il nome dell'autore nella sezione centrale. */
+.partner-companies-center p {
+    font-size: 12px;
+    margin-top: 65px;
+    margin-bottom: 35px;
+}
+
+.partner-companies-center span {
+    font-size: 12px;
+}
