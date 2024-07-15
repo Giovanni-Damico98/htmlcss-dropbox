@@ -94,14 +94,14 @@ header img {
 }
 
 /* Hover e active sul link dell'header */
-#header-hover:hover {
+.header-hover:hover {
     height: 100%;
     border-bottom: solid black;
 }
 
 /* Effetto di trasformazione al click */
-#header-hover:active,
-#button-active:active {
+.header-hover:active,
+.button-active:active {
     transform: scale(1.1);
 }
 
