@@ -69,6 +69,13 @@ body {
     padding: 120px 0 0;
 }
 
+/* Layout sezione welcome */
+.welcome-layout {
+    position: relative;
+    left: 55px;
+    width: 91%;
+}
+
 /* Stili per l'header */
 header {
     display: flex;
@@ -107,7 +114,7 @@ header img {
 
 /* Stili principali per i titoli */
 h1 {
-    font-size: 65px;
+    font-size: 63px;
     text-align: left;
 }
 
@@ -115,6 +122,7 @@ h1 {
 #h1-section {
     position: relative;
     top: 40px;
+    left: 148px;
     width: 76%;
 }
 
@@ -140,12 +148,14 @@ h1 {
 
 /* Paragrafi nella sezione di benvenuto */
 .welcome-section p {
+    font-size: 12px;
     padding: 30px 0;
 }
 
 /* Span nella sezione di benvenuto */
 .welcome-section span {
     margin-bottom: 85px;
+    font-size: 13px;
 }
 
 /* Sezione jumbo */
@@ -157,7 +167,7 @@ h1 {
 
 /* Pulsante di prova */
 .trial-button {
-    width: 65%;
+    width: 72%;
     margin-bottom: 30px;
 }
 
@@ -304,6 +314,7 @@ h1 {
 
 /* Bordo inferiore */
 .border-bottom {
+    margin-left: 12px;
     display: inline-block;
     padding-bottom: 40px;
     border-bottom: 1px solid lightgray;
@@ -449,7 +460,6 @@ h3 {
 .partner-companies-div {
     display: flex;
     flex-wrap: wrap;
-    height: 447px;
     width: 33.33%;
 }
 
@@ -563,6 +573,7 @@ h3 {
     font-size: 12px;
 }
 
+/* Stile per la sezione prova gratuita */
 .free-trial {
     display: flex;
     justify-content: center;
@@ -573,6 +584,7 @@ h3 {
     background-color: #B4D0E7;
 }
 
+/* Stile per i pulsanti nella sezione prova gratuita */
 .free-trial button {
     background-color: white;
     color: black;
@@ -582,12 +594,14 @@ h3 {
     padding: 8px 33px;
 }
 
+/* Stile per i titoli nella sezione prova gratuita */
 .free-trial h2 {
     font-size: 25px;
     text-align: left;
     color: #61082B;
 }
 
+/* Stile per i div interni nella sezione prova gratuita */
 .free-trial div {
     display: flex;
     justify-content: space-between;
@@ -595,9 +609,9 @@ h3 {
     width: 50%;
 }
 
-
+/* Stile per il contenitore delle FAQ */
 .faq-container {
-    width: 100%;
+    width: 97%;
     height: 500px;
     background-color: white;
     display: flex;
@@ -607,17 +621,20 @@ h3 {
     right: -31px;
 }
 
+/* Stile per il div delle FAQ */
 .faq-div {
     display: flex;
     flex-direction: column;
     width: 55%;
 }
 
+/* Stile per i titoli all'interno delle FAQ */
 .faq-div h2 {
     font-size: 30px;
     margin-bottom: 70px;
 }
 
+/* Stile per le righe delle FAQ */
 .faq-row {
     display: flex;
     justify-content: space-between;
@@ -630,6 +647,7 @@ h3 {
     position: relative;
 }
 
+/* Stile per le righe estese delle FAQ */
 .faq-row-ext {
     width: 100%;
     display: none;
@@ -638,8 +656,70 @@ h3 {
     left: 0;
 }
 
+/* Mostra le righe estese al passaggio del mouse */
 .faq-row:hover .faq-row-ext {
     display: block;
     position: relative;
     margin: 20px 0px;
+}
+
+/* Stile per il contenitore del footer */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    background-color: black;
+}
+
+/* Stile per le colonne del footer */
+.footer-column {
+    width: calc(60% / 5);
+    height: 200px;
+    align-self: flex-end;
+    border: solid black 1px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+
+/* Stile per gli span nelle colonne del footer */
+.footer-column span {
+    font-weight: bold;
+    margin-bottom: 17px;
+    color: white;
+}
+
+/* Stile per i link nelle colonne del footer */
+.footer-column a {
+    margin-bottom: 10px;
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Stile per l'ultima colonna del footer */
+.footer-column-last {
+    align-self: flex-end;
+    width: 66%;
+    height: 80px;
+    color: lightgray;
+    font-size: 12px;
+    position: relative;
+    left: 5px;
+}
+
+/* Stile per gli span nell'ultima colonna del footer */
+.footer-column-last span {
+    margin-right: 4px;
+}
+
+/* Stile per i div nell'ultima colonna del footer */
+.footer-column-last div {
+    width: 10%;
+    border-top: 1px solid white;
+    padding-top: 35px;
 }
